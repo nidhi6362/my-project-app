@@ -6,7 +6,7 @@ const ProductDetails = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://dummyjson.com/products')
+    axios.get('https://dummyjson.com/products')
       .then(response => {
         setProducts(response.data.products);
       })
@@ -15,7 +15,7 @@ const ProductDetails = () => {
       });
   }, []);
 
-  const columns = [vite-
+  const columns = [
     {
       title: 'Title',
       dataIndex: 'title',
